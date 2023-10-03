@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6a94ab363b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="PersianDate-master/dist/persian-date.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="details.css" />
+    <link rel="icon" href="assets/logo.png" />
+
+    <title>FilmYar</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="overlay"></div>
+      <nav>
+        <div id="navigation">
+          <div class="mobile-menu">
+            <i class="fas fa-bars" id="mobile-menu-icon"></i>
+            <ul class="mobile-menu-list">
+              <i class="fas fa-times" id="mobile-menu-close-icon"></i>
+              <li class="mobile-menu-item"><a href="index.html">خانه</a></li>
+              <li class="mobile-menu-item">
+                <a href="#" class="nav-film-link">فیلم</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#" class="nav-series-link">سریال</a>
+              </li>
+              <li class="mobile-menu-item">
+                سال ساخت
+                <i class="fas fa-chevron-down"></i>
+                <ul class="sub-mobile-menu-items">
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="1990">قبل از 1990 </a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="2000">1990-2010</a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="2011">2011-2020</a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="2021">2021</a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="2022">2022</a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="2023">2023</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu-item">
+                ژانر
+                <i class="fas fa-chevron-down"></i>
+                <ul class="sub-mobile-menu-items">
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="17">ترسناک </a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="9">کمدی </a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="7">فانتزی </a>
+                  </li>
+                  <li class="sub-mobile-menu-item">
+                    <a href="#" class="3">اکشن </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div id="nav-logo-section">
+            <a href="index.html">
+              <img src="assets/logo.png" alt="" />
+            </a>
+          </div>
+          <ul id="nav-links">
+            <li class="nav-link"><a href="index.html">خانه</a></li>
+            <li class="nav-link">
+              <a href="#" class="nav-film-link">فیلم</a>
+            </li>
+            <li class="nav-link">
+              <a href="#" class="nav-series-link">سریال</a>
+            </li>
+            <li class="nav-link">
+              سال ساخت
+              <i class="fas fa-chevron-down"></i>
+              <ul class="sub-nav-links">
+                <li class="sub-nav-link">
+                  <a href="#" class="1990">قبل از 1990 </a>
+                </li>
+                <li class="sub-nav-link">
+                  <a href="#" class="2000">1990-2010</a>
+                </li>
+                <li class="sub-nav-link">
+                  <a href="#" class="2011">2011-2020</a>
+                </li>
+                <li class="sub-nav-link"><a href="#" class="2021">2021</a></li>
+                <li class="sub-nav-link"><a href="#" class="2022">2022</a></li>
+                <li class="sub-nav-link"><a href="#" class="2023">2023</a></li>
+              </ul>
+            </li>
+            <li class="nav-link">
+              ژانر
+              <i class="fas fa-chevron-down"></i>
+              <ul class="sub-nav-links">
+                <li class="sub-nav-link"><a href="#" class="17">ترسناک </a></li>
+                <li class="sub-nav-link"><a href="#" class="9">کمدی </a></li>
+                <li class="sub-nav-link"><a href="#" class="7">فانتزی </a></li>
+                <li class="sub-nav-link"><a href="#" class="3">اکشن </a></li>
+              </ul>
+            </li>
+          </ul>
+          <form id="nav-search-section">
+            <input
+              type="text"
+              placeholder="نام فیلم یا سریال را بنویسید"
+              id="nav-search-input"
+            />
+            <button type="submit">
+              <i class="fas fa-search" id="nav-search-icon"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <div id="details-container">
+        <div id="bg-blur"></div>
+        <div class="film-desc"></div>
+
+        <div class="other-links">
+          <div class="tabs">
+            <div class="tab active" id="dl-link">لینک دانلود</div>
+            <div class="tab" id="recommended-films">فیلم‌های پیشنهادی</div>
+            <div class="tab" id="comment-section">نظرات</div>
+          </div>
+
+          <div class="tab-content">
+            <div id="dl-container"></div>
+            <div id="recommended-container"></div>
+
+            <div id="comment-container">
+              <div id="comment-number">0 نظر</div>
+
+              <form id="comment-form">
+                <div>
+                  <input
+                    type="text"
+                    id="user-name"
+                    required
+                    placeholder="نام کاربری"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="user-email"
+                    placeholder="ایمیل"
+                    autocomplete
+                    required
+                  />
+                </div>
+                <textarea
+                  name="comment"
+                  id="comment-text"
+                  placeholder="نظر خود را برای ما بنویسید..."
+                ></textarea>
+                <input type="submit" value="ارسال &#8592; " id="comment-send" />
+              </form>
+
+              <div class="published-comments">
+                <div class="user-comment">
+                  <div class="user-info">
+                    <span>A</span>
+                    <div class="user-name">Amin</div>
+                  </div>
+                  <div class="comment-body">
+                    <div class="comment-date">۱۴۰۲-۰۷-۱۱ ۲۱:۱۳:۵۱ ب ظ</div>
+
+                    <div class="comment-text">این فیلم فوق العاده بود 😍</div>
+                    <div class="comment-likes">
+                      <div class="like">
+                        <span>3</span>
+                        <i class="fa fa-thumbs-up"></i>
+                      </div>
+                      <div class="dislike">
+                        <span>1</span>
+                        <i class="fa fa-thumbs-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <ul id="useful-links">
+          <h3>لینک‌های مفید</h3>
+          <li class="useful-link"><a href="index.html">خانه</a></li>
+          <li class="useful-link">
+            <a href="#" class="nav-film-link">فیلم</a>
+          </li>
+          <li class="useful-link">
+            <a href="#" class="nav-series-link">سریال</a>
+          </li>
+        </ul>
+        <div id="about">
+          <h3>دربارۀ سایت</h3>
+          <p>
+            فیلم یار منبع جامعی از جدیدترین و بهترین فیلم و سریال‌ها است که هر
+            روز در حال به روزرسانی است
+          </p>
+          <small>تمامی حقوق محفوظ است ©</small>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="details.js"></script>
+  </body>
+</html>

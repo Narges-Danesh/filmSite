@@ -1,0 +1,372 @@
+#details-container {
+  overflow: hidden;
+}
+#bg-blur {
+  filter: blur(20px) grayscale(100%) brightness(0.5);
+  height: 600px;
+  background-image: url(assets/series/His-Dark-Materials.jpg);
+  background-size: 150%;
+  background-position: 50% 50%;
+}
+.film-desc {
+  display: flex;
+  padding: 30px 60px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.film-desc .poster {
+  border-radius: 15px;
+  height: 400px;
+  transition: all 1s;
+}
+.poster:hover {
+  box-shadow: 0 0 50px 10px black;
+  transform: scale(1.05);
+}
+.film-desc .details {
+  margin-right: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.film-desc .details .title {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+.film-desc .rating {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  font-size: 1.2rem;
+  gap: 10px;
+  font-weight: bold;
+}
+.film-desc .rating img {
+  height: 100%;
+}
+.film-desc .director,
+.film-desc .story {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+.film-desc .story {
+  font-size: 0.8rem;
+}
+.film-desc .director span,
+.film-desc .story span {
+  color: rgb(226, 226, 226);
+}
+.film-desc .details .buttons {
+  display: flex;
+}
+.film-desc .details .buttons a,
+.film-desc .details .buttons button {
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  margin-left: 5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.film-desc .details .buttons .dlButton {
+  background-color: rgb(218, 35, 35);
+  width: 100px;
+}
+.film-desc .details .buttons .likeButton {
+  background-color: #ffffff17;
+  font-size: 1.5rem;
+  width: 60px;
+}
+.film-desc .details .buttons .likeButton.liked {
+  background-color: red;
+}
+.film-desc .details .buttons .likeButton.animation i {
+  animation: popHeart 0.5s alternate 4;
+}
+@keyframes popHeart {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+.film-desc .details .buttons small {
+  color: rgb(255, 165, 165);
+  font-size: 1.2rem;
+  padding: 10px;
+}
+/* ===================== TABS ======================== */
+.other-links {
+  padding: 20px 30px;
+  background-color: #111;
+  z-index: 10;
+}
+.other-links .tabs {
+  background-color: #2e2e2e;
+  display: flex;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.other-links .tabs .tab {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.other-links .tabs .tab.active {
+  background-color: yellow;
+  color: black;
+}
+/* ===================== Download Section ======================== */
+.tab-content #dl-container {
+  background-color: #1f1f1f;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 0.9rem;
+}
+.tab-content .dl-box {
+  background-color: #131313;
+  margin: inherit;
+  padding: 10px 20px;
+  border-radius: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 3px solid yellow;
+  border-right: 3px solid yellow;
+}
+.tab-content .dl-box a {
+  border-radius: inherit;
+  padding: 5px 20px;
+  background-color: #1d1d1d;
+  transition: box-shadow 0.3s;
+}
+.tab-content .dl-box a:hover {
+  box-shadow: 0 0 7px 1px yellow;
+}
+/* ===================== Recommended Section ======================== */
+#recommended-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 0.9rem;
+  display: none;
+}
+#recommended-container .film-card {
+  height: 350px;
+  position: relative;
+  margin: 20px;
+}
+#recommended-container .film-card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+#recommended-container .film-card .film-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#recommended-container .film-card .film-details img {
+  width: 50px;
+}
+#recommended-container .film-card .film-details .film-title {
+  font-size: 1.3rem;
+  text-align: center;
+}
+#recommended-container .film-card .film-details .film-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  color: gold;
+}
+#recommended-container .film-card .film-details a {
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 40px;
+  margin-top: 20px;
+}
+#recommended-container .film-card .film-details:hover {
+  opacity: 1;
+}
+/* ===================== COMMENT Section ======================== */
+#comment-container {
+  padding: 30px 0;
+  background-color: #1f1f1f;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 0.9rem;
+  display: none;
+}
+#comment-container #comment-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+#comment-container #comment-form div {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+#comment-container #comment-form input,
+#comment-text {
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  flex-grow: 5;
+}
+#comment-text {
+  resize: none;
+}
+#comment-send {
+  flex-grow: 1 !important;
+  cursor: pointer;
+  background-color: rgb(174, 174, 230);
+  font-size: 1rem;
+}
+#comment-number {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+.user-comment {
+  display: flex;
+  padding: 20px;
+}
+.user-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  gap: 15px;
+}
+.user-info span {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: orangered;
+  font-size: 1.5rem;
+}
+.comment-date {
+  font-size: 0.75rem;
+}
+.comment-text {
+  margin: 15px 0;
+}
+.comment-likes {
+  display: flex;
+  gap: 10px;
+}
+.comment-likes i {
+  font-size: 1rem;
+  margin-right: 5px;
+  transition: color 0.3s;
+}
+.comment-likes .like i:hover {
+  color: green;
+}
+.comment-likes .dislike i:hover {
+  color: red;
+}
+/* ===================== MEDIA QUERIES ======================== */
+
+@media screen and (max-width: 1000px) {
+  #recommended-container {
+    padding: 30px 0;
+  }
+  #recommended-container .film-card {
+    height: 300px;
+  }
+  #recommended-container .film-card .film-details .film-title {
+    font-size: 1rem;
+  }
+  #recommended-container .film-card .film-details .film-rating {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .film-desc {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    align-items: center;
+  }
+  #bg-blur {
+    height: 900px;
+  }
+  .film-desc .poster {
+    max-width: 300px;
+  }
+  .film-desc .details {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .film-desc .details .buttons {
+    gap: 10px;
+  }
+  .film-desc .details div:first-child {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .film-desc .details .title {
+    text-align: center;
+  }
+  #comment-form {
+    flex-wrap: wrap;
+  }
+  #comment-form div,
+  #comment-form textarea {
+    flex: 40%;
+  }
+  #comment-send {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .dl-box {
+    flex-flow: column;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,62 @@
+#search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  padding: 80px 0 30px;
+  overflow: hidden;
+  width: 100%;
+}
+#search-container .film-card {
+  height: 350px;
+  min-width: 19%;
+  position: relative;
+  margin: 15px;
+}
+#search-container .film-card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+#search-container .film-card .film-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#search-container .film-card .film-details img {
+  width: 50px;
+}
+#search-container .film-card .film-details .film-title {
+  font-size: 1.3rem;
+  text-align: center;
+}
+#search-container .film-card .film-details .film-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  color: gold;
+}
+#search-container .film-card .film-details a {
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 40px;
+  margin-top: 20px;
+}
+#search-container .film-card .film-details:hover {
+  opacity: 1;
+}

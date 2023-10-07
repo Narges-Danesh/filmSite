@@ -12,15 +12,15 @@ const heroVideo = document.getElementById("hero-video");
 const headerVolumeButton = headerElement.querySelector(".fa-volume-up");
 
 // ======================= ADD FILMS SLIDER ==========================
-getFilmsFromAPI(3, actionFilms, true);
-getFilmsFromAPI(7, fantasyFilms, true);
-getFilmsFromAPI(9, comedyFilms, true);
-getFilmsFromAPI(17, horrorFilms, true);
+// getFilmsFromAPI(3, actionFilms, true);
+// getFilmsFromAPI(7, fantasyFilms, true);
+// getFilmsFromAPI(9, comedyFilms, true);
+// getFilmsFromAPI(17, horrorFilms, true);
 
 // ======================= ADD SERIES SLIDER ==========================
 seriesData.map((film) => {
   const { img, title, rating, id } = film;
-  return (seriesElement.innerHTML += `
+  seriesElement.innerHTML += `
     <div class="film-card">
             <img src="assets/series/${img}" alt="" />
             <div class="film-details">
@@ -32,7 +32,7 @@ seriesData.map((film) => {
               <a href="#" id="${id}">دانلود فیلم</a>
             </div>
             </div>
-    `);
+    `;
 });
 sliderFunction(seriesElement);
 
@@ -40,7 +40,7 @@ sliderFunction(seriesElement);
 newFilmsArray.map((film) => {
   if (film.year < 2021) return;
   const { img, title, rating, id, year } = film;
-  return (newFilmsContainer.innerHTML += `
+  newFilmsContainer.innerHTML += `
     <div class="film-card">
             <img src="${img}" alt="" />
             <div class="film-details">
@@ -52,10 +52,17 @@ newFilmsArray.map((film) => {
               <a href="#" id="${id}">دانلود فیلم</a>
             </div>
             </div>
-    `);
+    `;
 });
 sliderFunction(newFilmsContainer);
 
+// ======================= Dl Button ==========================
+const downloadButtons = document.querySelectorAll(".film-details a");
+downloadButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    window.location.href = `details.html?id=${btn.id}`;
+  });
+});
 // ======================= NAV COLOR CHANGE ON SCROLL ==========================
 addEventListener("scroll", () => {
   if (headerElement.offsetHeight < window.scrollY) {

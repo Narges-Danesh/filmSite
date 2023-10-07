@@ -591,11 +591,9 @@ footerLinks.forEach((tag) => {
   });
 });
 
-
 // film API
 function getFilmsFromAPI(genreID, whereTo, slider) {
   const newFilms = [];
-  const filmsData = [];
   const url = `https://moviesapi.ir/api/v1/genres/${genreID}/movies?page=1`;
   const options = {
     method: "GET",
@@ -930,26 +928,7 @@ function extractYearNewFilms(year) {
   });
 }
 // ===================== SEARCH ALL FILMS ============================
-const filmApiId = [];
-
-filmPlotTranslation.map((film) => {
-  filmApiId.push(film.id);
-});
-
 const allFilms = [...newFilmsArray, ...seriesData];
-
-filmApiId.map((id) => {
-  const url = `https://moviesapi.ir/api/v1/movies/${id}`;
-  const options = {
-    method: "GET",
-  };
-  (async () => {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    const film = JSON.parse(result);
-    allFilms.push(film);
-  })();
-});
 
 navSearchSection.addEventListener("submit", (e) => {
   e.preventDefault();

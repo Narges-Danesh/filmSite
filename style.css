@@ -26,6 +26,7 @@ ul {
 body {
   background-color: #222;
   color: white;
+  overflow-x: hidden;
 }
 /* =============== NAVIGATION ================ */
 nav {
@@ -97,11 +98,12 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 60%;
   height: 100vh;
   padding: 50px 20px 20px 20px;
   z-index: 300;
   transform: translateX(100%);
+  transition: all 0.3s;
 }
 .mobile-menu-item .fa-chevron-down {
   transform: rotate(0);
@@ -272,7 +274,7 @@ nav {
   text-shadow: 0 0 15px yellow;
 }
 #hero-video {
-  height: 75vh;
+  height: inherit;
   transform: scale(2);
   position: absolute;
   top: 0;
@@ -508,8 +510,39 @@ nav {
   }
 }
 @media screen and (max-width: 500px) {
+  #hero {
+    height: 60vh;
+  }
+  #hero-video {
+    transform: scale(2.5);
+  }
+  #header {
+    align-items: center;
+    margin-top: 20px;
+  }
+  #header h1 {
+    text-align: center;
+  }
+  #navigation {
+    margin-top: -20px;
+  }
   .film-slider .film-card {
     height: 250px;
     min-width: 49%;
+  }
+
+  #main .film-card .film-details .film-title {
+    font-size: 1rem;
+    margin: 0 2px;
+  }
+  #main .film-card .film-details .film-rating {
+    font-size: 1rem;
+  }
+  #main .film-card .film-details a {
+    padding: 5px 20px;
+  }
+  #banner h2 {
+    font-size: 1.2rem;
+    margin-left: 0;
   }
 }

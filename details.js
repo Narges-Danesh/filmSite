@@ -221,44 +221,6 @@ function showFilmDetails(filmId) {
 }
 showFilmDetails(filmId);
 // ======================== RECOMMENDED FILMS ============================
-//   const newFilms = [];
-//   const url = `https://moviesapi.ir/api/v1/genres/${genreID}/movies?page=1`;
-//   const options = {
-//     method: "GET",
-//   };
-
-//   (async () => {
-//     const response = await fetch(url, options);
-//     const result = await response.text();
-//     newFilms.push(JSON.parse(result));
-//     newFilms.map((film) => {
-//       film.data.slice(0, 6).forEach((film) => {
-//         const { poster, title, year, id, imdb_rating } = film;
-//         recommendedContainer.innerHTML += `
-//         <div class="film-card">
-//       <img src="${poster}" alt="" />
-//       <div class="film-details">
-//         <div class="film-title">${title + " " + year}</div>
-//         <div class="film-rating">
-//           <span>${imdb_rating}</span>
-//           <img src="assets/imdb.png" alt="" />
-//         </div>
-//         <a href="#" id="${id}">دانلود فیلم</a>
-//       </div>
-//       </div>
-//         `;
-//       });
-//     });
-//     const downloadButtons = document.querySelectorAll(".film-details a");
-//     downloadButtons.forEach((btn) => {
-//       btn.addEventListener("click", () => {
-//         window.location.href = `details.html?id=${btn.id}`;
-//       });
-//     });
-//   })();
-// }
-
-// randomRecommendedFilms(genres[randomGenre]);
 let usedIndices = [];
 
 function randomRecommendedFilms() {

@@ -11,34 +11,23 @@ const headerPlayButton = headerElement.querySelector(".fa-play");
 const heroVideo = document.getElementById("hero-video");
 const headerVolumeButton = headerElement.querySelector(".fa-volume-up");
 
-// ======================= ADD FILMS SLIDER ==========================
-// getFilmsFromAPI(3, actionFilms, true);
-// getFilmsFromAPI(7, fantasyFilms, true);
-// getFilmsFromAPI(9, comedyFilms, true);
-// getFilmsFromAPI(17, horrorFilms, true);
+// ======================= ADD HORROR FILMS ==========================
+let horrorGenre = newFilmsArray.filter((film) => film.genre == "horror");
+addNewFilms(horrorGenre, horrorFilms);
+sliderFunction(horrorFilms);
+
+// ======================= ADD ACTION FILMS ==========================
+let actionGenre = newFilmsArray.filter((film) => film.genre == "action");
+addNewFilms(actionGenre.slice(0, 7), actionFilms);
+sliderFunction(actionFilms);
 
 // ======================= ADD SERIES SLIDER ==========================
-seriesData.map((film) => {
-  const { img, title, rating, id } = film;
-  seriesElement.innerHTML += `
-    <div class="film-card">
-            <img src="assets/series/${img}" alt="" />
-            <div class="film-details">
-              <div class="film-title">${title}</div>
-              <div class="film-rating">
-                <span>${rating}</span>
-                <img src="assets/imdb.png" alt="" />
-              </div>
-              <a href="#" id="${id}">دانلود فیلم</a>
-            </div>
-            </div>
-    `;
-});
+addNewFilms(seriesData, seriesElement);
 sliderFunction(seriesElement);
 
 // ======================= NEW FILMS SLIDER ==========================
 newFilmsArray.map((film) => {
-  if (film.year < 2021) return;
+  if (film.year < 2023) return;
   const { img, title, rating, id, year } = film;
   newFilmsContainer.innerHTML += `
     <div class="film-card">

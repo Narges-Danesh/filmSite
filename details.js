@@ -16,6 +16,7 @@ const commentTextElement = document.getElementById("comment-text");
 const sendButton = document.getElementById("comment-send");
 const publishedComments = document.querySelector(".published-comments");
 
+const filmId = urlParams.get("id");
 // ======================== TABS ============================
 function removeActive() {
   tabs.forEach((tab) => tab.classList.remove("active"));
@@ -38,76 +39,9 @@ commentSectionTab.addEventListener("click", () => {
 });
 //======================== SHOW DETAILS ============================
 function showFilmDetails(filmId) {
-  const newFilms = [];
-  if (filmId < 2000) {
-    const url = `https://moviesapi.ir/api/v1/movies/${filmId}`;
-    const options = {
-      method: "GET",
-    };
-
-    (async () => {
-      try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        newFilms.push(JSON.parse(result));
-        const { title, poster, year, director, imdb_rating } = newFilms[0];
-        bgBlur.style.backgroundImage = `url(${poster})`;
-        thisPlot = filmPlotTranslation.find((plot) => plot.id == filmId);
-        detailsContainer.innerHTML += `
-        <img
-          src="${poster}"
-          alt=""
-          class="poster"
-        />
-        <div class="details">
-          <div>
-            <h1 class="title">${title} ${year}</h1>
-            <div class="rating">
-              <img src="assets/imdb.png" alt="" />
-              <span>${imdb_rating}</span>
-            </div>
-            <div class="director"> کارگردان: <span>${director}</span> </div>
-            <div class="story"> توضیحات فیلم: <span>${thisPlot.plot}</span>  </div>
-          </div>
-          <div class="buttons">
-            <a href="#dl-link" class="dlButton">دانلود</a>
-            <button class="likeButton"><i class="fas fa-heart"></i></button>
-            <small></small>
-          </div>
-        </div>
-      </div>
-        `;
-
-        const dlButton = document.querySelector(".dlButton");
-
-        dlButton.addEventListener("click", () => {
-          removeActive();
-          dlLinkTab.classList.add("active");
-          dlContainer.style.display = "block";
-          recommendedContainer.style.display = "none";
-          commentContainer.style.display = "none";
-        });
-        dlLinkTab.addEventListener("click", () => {
-          dlContainer.style.display = "block";
-          recommendedContainer.style.display = "none";
-          commentContainer.style.display = "none";
-        });
-
-        dlContainer.innerHTML += `
-        <div class="header">فیلم</div>
-        <div class="dl-box">
-          <span>دانلود با کیفیت 720</span>
-          <a href="#" target="_blank">دانلود</a>
-        </div>
-  `;
-        filmLike();
-      } catch (error) {
-        console.error(error);
-      }
-    })();
-  } else if (filmId < 4000) {
+  if (filmId < 5000) {
     let newFilmId = newFilmsArray.find((film) => film.id == parseInt(filmId));
-    const { img, title, rating, plot, director, dl_link } = newFilmId;
+    const { img, title, year, rating, plot, director, dl_link } = newFilmId;
     bgBlur.style.backgroundImage = `url(${img})`;
 
     detailsContainer.innerHTML += `
@@ -118,7 +52,7 @@ function showFilmDetails(filmId) {
         />
         <div class="details">
           <div>
-            <h1 class="title">${title}</h1>
+            <h1 class="title">${title} ${year}</h1>
             <div class="rating">
               <img src="assets/imdb.png" alt="" />
               <span>${rating}</span>
@@ -235,7 +169,7 @@ function randomRecommendedFilms() {
     <div class="film-card">
   <img src="${img}" alt="" />
   <div class="film-details">
-    <div class="film-title">${title + " " + year}</div>
+    <div class="film-title">${title} ${year}</div>
     <div class="film-rating">
       <span>${rating}</span>
       <img src="assets/imdb.png" alt="" />
@@ -256,7 +190,7 @@ function randomRecommendedFilms() {
 randomRecommendedFilms();
 // ======================== ADD COMMENT ============================
 const commentCountElement = document.getElementById("comment-number");
-let commentCount = 0;
+let commentCount = 1;
 commentForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let userName = userNameElement.value;
@@ -266,7 +200,6 @@ commentForm.addEventListener("submit", (e) => {
   let currentDate = iranianDate.toLocale("fa").format();
   commentCountElement.innerHTML = `${++commentCount} نظر`;
   publishedComments.innerHTML += `
-
   <div class="user-comment">
     <div class="user-info">
       <span>${picture}</span>

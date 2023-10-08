@@ -142,140 +142,6 @@ const seriesData = [
     },
   },
 ];
-const filmPlotTranslation = [
-  {
-    id: 4,
-    plot: "هنگامی که تهدیدی که به نام جوکر نامیده می شود ویرانی و هرج و مرج را بر سر مردم گاتهام ایجاد می کند، صلیبی شنل پوش باید با یکی از بزرگترین آزمون های روانشناختی توانایی خود در مبارزه با بی عدالتی کنار بیاید.",
-  },
-  {
-    id: 8,
-    plot: "گندالف و آراگورن، دنیای انسان‌ها را در مقابل ارتش سائورون رهبری می‌کنند تا نگاه او را از فرودو و سام در حالی که با حلقه یگانه به کوه عذاب نزدیک می‌شوند، جلب کنند.",
-  },
-  {
-    id: 11,
-    plot: "یک هابیت فروتن از شایر و هشت همراهش برای نابودی حلقه قدرتمند وان و نجات زمین میانه از دست ارباب تاریکی سائورون راهی سفر می شوند.",
-  },
-  {
-    id: 12,
-    plot: "پس از اینکه شورشیان به طور وحشیانه ای توسط امپراتوری در پایگاه تازه تأسیس خود غلبه کردند، لوک اسکای واکر به آموزش جدی جدی با استاد یودا می گذرد، در حالی که دوستانش توسط دارث ویدر به عنوان بخشی از نقشه او برای دستگیری لوک تعقیب می شوند.",
-  },
-  {
-    id: 13,
-    plot: "فارست گامپ، اگرچه باهوش نیست، اما به طور تصادفی در بسیاری از لحظات تاریخی حضور داشته است، اما عشق واقعی او، جنی کوران، از او فرار می کند.",
-  },
-  {
-    id: 14,
-    plot: "دزدی که اسرار شرکت را با استفاده از فناوری به اشتراک گذاری رویا می دزدد، وظیفه معکوس ایجاد یک ایده در ذهن یک مدیر عامل را بر عهده دارد.",
-  },
-  {
-    id: 15,
-    plot: "در حالی که فرودو و سام با کمک گولوم شیطون به موردور نزدیک‌تر می‌شوند، گروه دوپاره در برابر متحد جدید سائورون، سارومان، و انبوهی از ایزنگارد او ایستادگی می‌کنند.",
-  },
-  {
-    id: 18,
-    plot: "یک هکر رایانه از شورشیان مرموز در مورد ماهیت واقعی واقعیت خود و نقش خود در جنگ علیه کنترل‌کنندگان آن اطلاعات می‌گیرد.",
-  },
-  {
-    id: 19,
-    plot: "دهکده ای فقیر که مورد حمله راهزنان قرار گرفته است، هفت سامورایی بیکار را برای کمک به دفاع از خود استخدام می کند.",
-  },
-  {
-    id: 20,
-    plot: "لوک اسکای واکر با یک شوالیه جدی، یک خلبان خودسر، یک ووکی و دو دروید به نیروهای خود می‌پیوندد تا کهکشان را از ایستگاه نبرد ویرانگر جهان امپراتوری نجات دهد، در حالی که تلاش می‌کند شاهزاده خانم لیا را از شر دارث ویدر نجات دهد.",
-  },
-  {
-    id: 24,
-    plot: "فرشته ای به یک تاجر دلسوز اما ناامید کمک می کند و نشان می دهد که اگر هرگز وجود نداشت، زندگی چگونه بود.",
-  },
-  {
-    id: 26,
-    plot: "هنگامی که یک کتابدار یهودی با ذهن باز و پسرش قربانی هولوکاست می شوند، او از ترکیبی عالی از اراده، شوخ طبعی و تخیل برای محافظت از پسرش در برابر خطرات اطراف اردوگاهشان استفاده می کند.",
-  },
-  {
-    id: 29,
-    plot: "پس از فرود نرماندی، گروهی از سربازان آمریکایی به پشت خطوط دشمن می روند تا چتربازی را که برادرانش در عملیات کشته شده اند، پس بگیرند.",
-  },
-  {
-    id: 34,
-    plot: "یک منشی فینیکس 40000 دلار از مشتری کارفرمایش اختلاس می کند، فرار می کند و به متل دورافتاده ای که توسط مرد جوانی تحت سلطه مادرش اداره می شود مراجعه می کند.",
-  },
-  {
-    id: 35,
-    plot: "با کمک یک ولگرد بی نظم ثروتمند، یک ولگرد چشم شبنم که عاشق یک دختر گل بی بینا شده است، پول جمع می کند تا بتواند از نظر پزشکی به او کمک کند.",
-  },
-  {
-    id: 36,
-    plot: "زندگی نگهبانان در محکومیت مرگ تحت تأثیر یکی از اتهامات آنها قرار می گیرد: مرد سیاه پوستی که متهم به قتل و تجاوز به کودک است، اما هدیه ای مرموز دارد.",
-  },
-  {
-    id: 37,
-    plot: "ایندیانا جونز باستان شناس و ماجراجو توسط دولت ایالات متحده استخدام می شود تا صندوقچه عهد را در برابر نازی ها بیابد.",
-  },
-  {
-    id: 38,
-    plot: "بعد از اینکه یک اشراف زاده در اثر تصادف با پاراگلایدر چهار پلژیک می شود، مرد جوانی را از پروژه ها استخدام می کند تا مراقب او باشد.",
-  },
-  {
-    id: 39,
-    plot: "ولگرد برای زندگی در جامعه صنعتی مدرن با کمک یک زن جوان بی خانمان تلاش می کند.",
-  },
-  {
-    id: 41,
-    plot: "یک سایبورگ، مشابه کسی که نتوانست سارا کانر را بکشد، اکنون باید از پسر جوانش، جان کانر، در برابر یک سایبورگ پیشرفته‌تر، ساخته شده از فلز مایع محافظت کند.",
-  },
-  {
-    id: 44,
-    plot: "مارتی مک فلای، دانش آموز 17 ساله دبیرستانی، به طور تصادفی در سفری در زمان دلورین که توسط دوست نزدیکش، دانشمند بدجنس داک براون، اختراع شده بود، 30 سال به گذشته فرستاده می شود.",
-  },
-  {
-    id: 46,
-    plot: "هنگامی که یک ژنرال رومی مورد خیانت قرار می گیرد و خانواده اش توسط پسر فاسد یک امپراتور به قتل می رسد، او به عنوان یک گلادیاتور به رم می آید تا انتقام بگیرد.",
-  },
-  {
-    id: 51,
-    plot: "پس از اینکه یک کشتی تجاری فضایی یک انتقال ناشناخته را به عنوان تماس پریشان درک کرد، فرود آنها بر روی ماه مبدا متوجه می شود که یکی از خدمه مورد حمله یک شکل زندگی مرموز قرار گرفته است. با ادامه سفر خود به زمین با بهبودی خدمه حمله شده و مرگ جانور، آنها به زودی متوجه می شوند که چرخه زندگی آن تازه شروع شده است.",
-  },
-  {
-    id: 52,
-    plot: "یک ژنرال دیوانه مسیری را به سوی هولوکاست هسته ای آغاز می کند که اتاق جنگی پر از سیاستمداران و ژنرال ها دیوانه وار سعی می کنند جلوی آن را بگیرند.",
-  },
-  {
-    id: 54,
-    plot: "دیکتاتور Adenoid Hynkel سعی می کند امپراتوری خود را گسترش دهد در حالی که یک آرایشگر یهودی فقیر سعی می کند از آزار و اذیت رژیم Hynkel جلوگیری کند.",
-  },
-  {
-    id: 60,
-    plot: "خانواده ای برای زمستان به هتلی منزوی می روند که در آن حضور شیطانی و معنوی پدر را تحت تأثیر خشونت قرار می دهد، در حالی که پسر روانی او پیشگویی های وحشتناکی از گذشته و آینده می بیند.",
-  },
-  {
-    id: 64,
-    plot: "در سفری برای یافتن درمانی برای نفرین تاتاریگامی، آشیتاکا خود را در میانه جنگ بین خدایان جنگل و تاتارا، مستعمره معدن، می بیند. در این کوئست او با سان، مونونوک هیمه نیز ملاقات می کند.",
-  },
-  {
-    id: 73,
-    plot: "پس از نجات هان سولو از کاخ جبا هات، شورشیان تلاش می کنند تا ستاره مرگ دوم را نابود کنند، در حالی که لوک تلاش می کند تا ویدر را از سمت تاریک نیرو بازگرداند.",
-  },
-  {
-    id: 77,
-    plot: "آملی دختری بی گناه و ساده لوح در پاریس است که احساس عدالت دارد. او تصمیم می گیرد به اطرافیانش کمک کند و در این راه عشق را کشف می کند.",
-  },
-  {
-    id: 85,
-    plot: "هنگامی که رابطه آنها تیره می شود، یک زن و شوهر تحت عملی قرار می گیرند تا یکدیگر را از خاطرات خود پاک کنند. اما تنها از طریق روند از دست دادن است که آنها کشف می کنند که باید با چه چیزی شروع کنند.",
-  },
-  {
-    id: 86,
-    plot: "اسباب‌بازی‌ها درست قبل از رفتن اندی به کالج، اشتباهاً به‌جای اتاق زیر شیروانی به یک مرکز مهدکودک تحویل داده می‌شوند، و این وظیفه وودی است که بقیه اسباب‌بازی‌ها را متقاعد کند که رها نشده‌اند و به خانه بازگردند.",
-  },
-  {
-    id: 173,
-    plot: "این اولین هفته زمستان در سال 1982 است. یک پایگاه تحقیقاتی آمریکایی توسط یک نیروی بیگانه استقبال می شود، که می تواند هر چیزی را که لمس کند جذب کند. این به اعضا بستگی دارد که زنده بمانند و مطمئن باشند که چه کسی انسان است و چه کسی یکی از چیزها شده است.",
-  },
-  {
-    id: 224,
-    plot: "همسر یک مدیر مدرسه بی رحم و معشوقه اش با هم توطئه می کنند تا او را بکشند، اما پس از انجام قتل، جسد او ناپدید می شود و اتفاقات عجیبی شروع به گریبان دو زن می کند.",
-  },
-];
 const newFilmsArray = [
   {
     id: 3000,
@@ -284,7 +150,7 @@ const newFilmsArray = [
     img: "https://aiofilm.click/wp-content/uploads/2023/08/barbie.jpg",
     rating: 7.4,
     director: "Greta Gerwig",
-    genre: "fantasy",
+    genre: "comedy",
     plot: "باربی از بحرانی رنج می برد که او را به زیر سوال بردن جهان و وجودش می کشاند.    ",
     dl_link:
       "https://dl6.rostam.top/movie/2023/Barbie/Barbie.2023%5B720p%5D%5Bx265%5D%5BSS%5D%5BAioFilm.com%5D.mkv",
@@ -321,7 +187,7 @@ const newFilmsArray = [
     img: "https://aiofilm.click/wp-content/uploads/2022/04/Shazam-Fury-of-the-Gods-1.jpg",
     rating: 6,
     director: "David F. Sandberg",
-    genre: "fantasy",
+    genre: "comedy",
     plot: "«بیلی بتسون» و دوستانش باید با «دختران اطلس» نبرد کنند و مانع از نابودی دنیا با سلاح مرگبار آنان شوند.    ",
     dl_link:
       "https://dl6.rostam.top/movie/2023/Shazam%20Fury%20of%20the%20Gods/Shazam.Fury.of.the.Gods.2023%5B720p%5D%5Bx265%5D%5BSS%5D%5BAioFilm.com%5D.mkv",
@@ -572,7 +438,286 @@ const newFilmsArray = [
     dl_link:
       "https://dl3.rostam.top/film/2010/How%20to%20Train%20Your%20Dragon/How.to.Train.Your.Dragon.2010%5B720p%5D%5BAioFilm.com%5D.mp4",
   },
+  {
+    id: 3023,
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    year: 2001,
+    img: "https://aiofilm.click/wp-content/uploads/2021/09/The-Lord-of-the-Rings-The-Fellowship-of-the-Ring.jpg",
+    rating: 8.8,
+    genre: "action",
+    director: "Peter Jackson",
+    plot: "یک حلقه‌ی باستانی که قرن‌ها پیش گم گشته بود، حالا دوباره پیدا شده و از دست تقدیر، به هابیتی جوان بنام فرودو رسیده است. وقتی که گندالف می‌فهمد که این حلقه، همان حلقه یگانه ارباب تاریکی، سائورون است، فرودو مجبور می‌شود این حلقه را به کوه نابودی برده و آن را از بین ببرد. با این وجود او تنها نمی‌رود و در این راه هشت یار دیگر به او در انجام ماموریتش کمک می کنند. یاران حلقه باید از میان کوه‌ها، جنگل‌ها، برف و بوران و تاریکی عبور کنند و با نیروهای شرور تاریکی در میان راهشان مقابله کنند. موفقیت آن‌ها در این ماموریت سخت، تنها امید برای خاتمه دادن به دوران حکومت ارباب تاریکی است…",
+    dl_link:
+      "https://dl.rostam.top/film/2001/The%20Lord%20of%20the%20Rings%20The%20Fellowship%20of%20the%20Ring/The.Lord.of.the.Rings.The.Fellowship.of.the.Ring.2001%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3024,
+    title: "The Lord of the Rings: The Return of the King",
+    year: 2003,
+    img: "https://aiofilm.click/wp-content/uploads/2021/09/The-Lord-of-the-Rings-The-Return-of-the-King.jpg",
+    rating: 8.9,
+    genre: "action",
+    director: "Peter Jackson",
+    plot: "فرودو و سم با راهنمایی گالوم، به مسیرشان به سمت کوه نابودی ادامه میدهند، در حالی که مطمئن نیستند او به چه سمتی هدایتشان می کند. باقیمانده یاران حلقه، مردم گاندور و روهان را در نبردی عظیم علیه نیروهای سائورون، یاری می کنند.",
+    dl_link:
+      "https://dl.rostam.top/film/2003/The%20Lord%20of%20the%20Rings%20The%20Return%20of%20the%20King/The.Lord.of.the.Rings.The.Return.of.the.King.2003%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3025,
+    title: "Talk to Me",
+    year: 2022,
+    img: "https://aiofilm.click/wp-content/uploads/2023/09/Talk-to-Me.jpg",
+    rating: 7.4,
+    genre: "horror",
+    director: "Danny Philippou",
+    plot: "هنگامی که گروهی از دوستان متوجه می شوند که چگونه با استفاده از یک دست مومیایی شده، ارواح را تداعی کنند، در هیجان جدید گیر می کنند، تا زمانی که یکی از آنها زیاده روی می کند و نیروهای ماوراء طبیعی وحشتناک را آزاد می کند.",
+    dl_link:
+      "https://dl6.rostam.top/movie/2022/Talk%20to%20Me/Talk.to.Me.2022%5B720p%5D%5BSS%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3026,
+    title: "The Dark Knight",
+    year: 2008,
+    img: "https://aiofilm.click/wp-content/uploads/2021/09/The-Dark-Knight.jpg",
+    rating: 9,
+    genre: "action",
+    director: "Christopher Nolan",
+    plot: "بتمن به کمک سرگرد جیم گوردون و دادستان جدید هاروی دنت، شهر را از وجود آخرین خانواده‌های تبهکاری پاک می کند. همکاری این سه نفر ظاهرا موثر واقع میشود، اما طولی نمی کشد که خود را در مقابل هرج و مرج های یک تبهکار نو پا بنام جوکر، عاجز می‌بینند.",
+    dl_link:
+      "https://dl.rostam.top/film/2008/The%20Dark%20Knight/The.Dark.Knight.2008%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3027,
+    title: "The Dark Knight Rises",
+    year: 2012,
+    img: "https://aiofilm.click/wp-content/uploads/2021/09/The-Dark-Knight-Rises.jpg",
+    rating: 8.4,
+    genre: "action",
+    director: "Christopher Nolan",
+    plot: "هشت سال بعد از اینکه بتمن تمام جنایت‌های هاروی دنت را گردن میگیرد، رهبر گروهی از تروریست ها بنام بین، شهر گاتهام را ویران می‌کند و اینگونه است که شوالیه تاریکی برای محافظت از شهر باز می‌گردد…",
+    dl_link:
+      "https://dl.rostam.top/film/2012/The%20Dark%20Knight%20Rises/The.Dark.Knight.Rises.2012%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3028,
+    title: "The Suicide Squad ",
+    year: 2021,
+    img: "https://aiofilm.click/wp-content/uploads/2021/09/The-Suicide-Squad.jpg",
+    rating: 7.4,
+    genre: "action",
+    director: "James Gunn",
+    plot: "زندانیان سابق که حالا از شر ریموت کنترل کننده خلاص شده‌اند، با یکدیگر متحد می‌شوند تا با تهدیدی جدید مواجه شوند که…    ",
+    dl_link:
+      "https://dl.rostam.top/film/2021/The%20Suicide%20Squad/The.Suicide.Squad%5B720%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3029,
+    title: "Extraction ",
+    year: 2020,
+    img: "https://aiofilm.click/wp-content/uploads/2021/10/image_2021-10-14_223842.png",
+    rating: 6.7,
+    genre: "action",
+    director: "Sam Hargrave",
+    plot: "فیلم استخراج Extraction : درباره یک مزدور بی‌باک بازار سیاه به نام تایلر راک است که یک روز از او درخواست می شود از مهارت های خود برای نجات فرزند ربوده شده یک جنایتکار بین الملل ی استفاده کند. حالا مرگبارترین ماموریت شغلی‌اش آغاز می‌شود و…",
+    dl_link:
+      "https://dl.rostam.top/film/2020/Extraction/Extraction.%5BSS%5D%5B720%5D%5BAioFilm.com%5D.mp4",
+  },
+  {
+    id: 3030,
+    title: "Spider-Man: Far From Home",
+    year: 2019,
+    img: "https://aiofilm.click/wp-content/uploads/2021/11/Spider-Man-Far-from-Home.jpg",
+    rating: 7.4,
+    genre: "action",
+    director: "Jon Watts",
+    plot: "پس از حوادث فیلم “انتقام جویان: پایان بازی”، مرد عنکبوتی باید برای از بین بردن تهدیدات جدید، در دنیایی که برای همیشه تغییر کرده‌ است قدم بردارد.    ",
+    dl_link:
+      "https://dl.rostam.top/film/2019/Spider-Man%3A%20Far%20From%20Home/Spider-Man.Far.from.Home.2019%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3031,
+    title: "Insidious: The Red Door ",
+    year: 2023,
+    img: "https://aiofilm.click/wp-content/uploads/2023/08/insidious-the-red-door.jpg",
+    rating: 5.6,
+    genre: "horror",
+    director: "Patrick Wilson",
+    plot: "لامبرت ها باید بیشتر از همیشه به The Further بروند تا شیاطین خود را یک بار برای همیشه آرام کنند.",
+    dl_link:
+      "https://dl6.rostam.top/movie/2023/Insidious%20The%20Red%20Door/Insidious.The.Red.Door.2023%5BSS%5D%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3032,
+    title: "Spider-Man: Homecoming ",
+    year: 2017,
+    img: "https://aiofilm.click/wp-content/uploads/2021/11/Spider-Man-Homecoming.jpg",
+    rating: 7.4,
+    genre: "action",
+    director: "Jon Watts",
+    plot: "پیتر پارکر پس از تجربه ای که با گروه انتقام جویان داشت به خانه بازمیگردد تا با عمه‌ی خود زندگی کند. او در همین حال که تحت نظر مربی اش تونی استارک است، سعی میکند با هویت تازه اش کنار بیاید…    ",
+    dl_link:
+      "https://dl.rostam.top/film/2017/Spider-Man%3A%20Homecoming/Spider.Man.Homecoming.2017%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3033,
+    title: "Thor: The Dark World",
+    year: 2013,
+    img: "https://aiofilm.click/wp-content/uploads/2021/11/Thor-The-Dark-World.jpg",
+    rating: 6.8,
+    genre: "action",
+    director: "Alan Taylor",
+    plot: "بعد از اینکه جین فاستر مورد تهدید ساکنان دنیای تاریک سارتالفیم قرار می گیرد، تور آماده می شود تا به زمین بازگشته و به هر قیمتی از جان او محافظت کند…    ",
+    dl_link:
+      "https://dl.rostam.top/film/2013/Thor%3A%20The%20Dark%20World/Thor.The.Dark.World.2013.Farsi.Dubbed%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3034,
+    title: "If I Can’t Have Love, I Want Power ",
+    year: 2021,
+    img: "https://aiofilm.click/wp-content/uploads/2021/10/If-I-Cant-Have-Love-I-Want-Power.jpg",
+    rating: 7.6,
+    genre: "horror",
+    director: "Colin Tilley",
+    plot: "اگر من نمی توانم عشق داشته باشم ، من قدرت می خواهم ، یک فیلم سینمایی یک ساعته با موسیقی آلبوم آینده Halsey ، یک ملکه باردار جوان ، لیلا را معرفی می کند ، در حالی که او با خفه کننده عشق دست و پنجه نرم می کند تا در نهایت این توانایی را کشف کند.",
+    dl_link:
+      "https://dl.rostam.top/film/2021/If%20i%20Cant%20Have%20Love%20I%20Want%20Power/If.I.Cant.Have.Love.I.Want.Power.2021%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3035,
+    title: "The Night House",
+    year: 2020,
+    img: "https://aiofilm.click/wp-content/uploads/2021/10/The-Night-House.jpg",
+    rating: 6.9,
+    genre: "horror",
+    director: "David Bruckner",
+    plot: "یک بیوه شروع به کشف اسرار شومی از شوهرش می کند که اخیرا فوت کرده است و…    ",
+    dl_link:
+      "https://dl.rostam.top/film/2020/The%20Night%20House/The.Night.House.2020%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3036,
+    title: "Halloween Kills",
+    year: 2021,
+    img: "https://aiofilm.click/wp-content/uploads/2021/10/Halloween-Kills.jpg",
+    rating: 7.7,
+    genre: "horror",
+    director: "David Gordon Green",
+    plot: "هالووین می‌کشد یک فیلم اسلشر آمریکایی به کارگردانی دیوید گوردون گرین و نویسندگی گیرن، دنی مک‌براید و اسکات تیمز است. این دنباله فیلم ۲۰۱۸ هالووین و قسمت دوازدهم فرنچایز مجموعه هالووین است. در فیلم ستارگانی از جمله جیمی لی کرتیس، نیک کسل تکرار نقش خود را به عنوان لوری استرود و مایکل مایرز به تصویر می‌کشند.",
+    dl_link:
+      "https://dl.rostam.top/film/2021/Halloween%20Kills/Halloween.Kills.2021%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3037,
+    title: "Spirited ",
+    year: 2022,
+    img: "https://aiofilm.click/wp-content/uploads/2022/11/Spirited.jpg",
+    rating: 6.6,
+    genre: "comedy",
+    director: "Sean Anders",
+    plot: "نسخه ای موزیکال از داستان چارلز دیکنز درباره یک انسان دوست خسیس که به سفری جادویی برده می شود.    ",
+    dl_link: "",
+  },
+  {
+    id: 3038,
+    title: "Bullet Train",
+    year: 2022,
+    img: "https://aiofilm.click/wp-content/uploads/2022/11/Bullet-Train.jpg",
+    rating: 7.3,
+    genre: "comedy",
+    director: "David Leitch",
+    plot: "پنج آدمکش در قطاری سریع السیر متوجه می‌شوند که در ماموریتشان نقاط مشترکی وجود دارد.    ",
+    dl_link:
+      "https://dl4.rostam.top/Movie/2022/Bullet%20Train/Bullet.Train.2022.REPACK.Farsi.Dubbed%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3039,
+    title: "Jungle Cruise",
+    year: 2021,
+    img: "https://aiofilm.click/wp-content/uploads/2021/09/Jungle-Cruise.jpg",
+    rating: 6.6,
+    genre: "comedy",
+    director: "Jaume Collet-Serra",
+    plot: "دکتر «لیلی هاوتن» شخصی به نام «فرانک ولف» را استخدام می‌کند تا او را با استفاده از قایقش به اعماق آمازون ببرد. در کنار یک‌دیگر، آنها به دنبال یک درخت باستانی که می‌تواند آینده علم پزشکی را تغییر دهد، می‌گردند اما…    ",
+    dl_link:
+      "https://dl.rostam.top/film/2021/Jungle%20Cruise/Jungle.Cruise.2021%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3040,
+    title: "Se7en ",
+    year: 1995,
+    img: "https://aiofilm.click/wp-content/uploads/2022/05/Se7en.jpg",
+    rating: 8.6,
+    genre: "",
+    director: "David Fincher",
+    plot: "جان دوو قاتلی است که تصمیم گرفته است هفت نفر را که نماد هفت گناه کبیره هستند به قتل برساند. هدف او از این کار هشدار دادن به انسانهایی است که غرق در گناه روز خود را به شب می رسانند. مسئول پرونده این قتلها دیوید میلز است، کاراگاه جوانی که تازه به نیویورک منتقل شده است. میلز با همکاری کاراگاه سامرست که در شرف بازنشستگی است قدم به قدم دوو را تعقیب می کنند اما حوادثی رخ می دهد که شرایط را تغییر می دهد. تغییری اساسی…",
+    dl_link:
+      "https://dl3.rostam.top/film/1995/Se7en/Se7en.1995.REMASTERED%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3041,
+    title: "Léon ",
+    year: 1994,
+    img: "https://aiofilm.click/wp-content/uploads/2022/05/Leon.jpg",
+    rating: 8.5,
+    genre: "action",
+    director: "Luc Besson",
+    plot: "آدم کشی حرفه ای به نام “لئون” در آپارتمانی در محله ی ایتالیایی های نیویورک زندگی می کند. “استانسفیلد”، مأمور فاسد پلیس، تمام خانواده ی همسایه را می کشد و تنها دختر دوازده ساله شان، “ماتیلدا” که برای خرید بیرون رفته جان سالم به در می برد.”ماتیلدا” به “لئون” پناه می برد و خیلی زود این دو با یک دیگر دوست می شوند…",
+    dl_link:
+      "https://dl3.rostam.top/film/1994/Leon%20The%20Professional/Leon%20The%20Professional.%5BSS%5D%5B720%5D%5BAioFilm.com%5D.mp4",
+  },
+  {
+    id: 3042,
+    title: "Goodfellas",
+    year: 1990,
+    img: "https://aiofilm.click/wp-content/uploads/2022/05/Goodfellas.jpg",
+    rating: 8.7,
+    genre: "",
+    director: "Martin Scorsese",
+    plot: "این فیلم داستانِ زندگی «هنری هیل» یک خلافکار و روابطش با همسرش «کارن هیل» و همدستانش «جیمی کانوی» و «تامی دویتو» در یک سندیکای خلافکاریِ ایتالیایی-آمریکایی را برای ما روایت می‌کند.",
+    dl_link:
+      "https://dl3.rostam.top/film/1990/Goodfellas/Goodfellas.1990%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3043,
+    title: "Forrest Gump",
+    year: 1994,
+    img: "https://aiofilm.click/wp-content/uploads/2022/05/Forrest-Gump.jpg",
+    rating: 8.8,
+    genre: "",
+    director: "Robert Zemeckis",
+    plot: "داستان این فیلم درباره‌ی فردی به نام «فورست گامپ» می‌باشد که روی نیمکت نشسته و منتظر اتوبوس است. او در همانجا، برای افراد مختلف، گوشه‌هایی از داستان زندگی خود را نیز تعریف می‌کند که مصادف با اتفاقات مهم دوران تاریخی آمریکا نیز می‌باشد.",
+    dl_link:
+      "https://dl3.rostam.top/film/1994/Forrest%20Gump/Forrest.Gump.1994.Farsi.Dubbed%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3044,
+    title: "Fight Club",
+    year: 1999,
+    img: "https://aiofilm.click/wp-content/uploads/2021/10/Fight-Club.jpg",
+    rating: 8.8,
+    genre: "",
+    director: "David Fincher",
+    plot: "راوی، جوانی پریشان حال پی می برد که به کمک مشت بازی با دست های برهنه، بیش از هر زمان دیگری احساس زنده بودن می کند. او و تایلر دردن که به دوستانی صمیمی تبدیل شده اند، هفته ای یک بار با هم ملاقات می کنند تا با هم مشت بازی کنند. در حالی که افراد دیگری هم به باشگاه شان می پیوندند، محفل شان به رغم آن که رازی است بین شرکت کننده هایش، شهرت و محبوبیت یک باشگاه زیرزمینی را پیدا می کند.    ",
+    dl_link:
+      "https://dl.rostam.top/film/1999/Fight%20Club/Fight.Club.1999%5B720p%5D%5BAioFilm.com%5D.mkv",
+  },
+  {
+    id: 3045,
+    title: "A Better Tomorrow",
+    year: 1986,
+    img: "https://aiofilm.click/wp-content/uploads/2022/03/image_2022-03-01_134322.jpg",
+    rating: 7.4,
+    genre: "action",
+    director: "John Woo",
+    plot: "فردایی بهتر؛ فیلمی اکشن به کارگردانی جان وو است. داستان دو برادر است.یکی از آنها جاعلی موفق و دیگری فارغ التحصیل آکادمی پلیس هنگ کنگ است. وقتی برادر کوچکتر متوجه می شود که برادر دیگرش تبهکار است تلاش می کند او را اصلاح کند اما…",
+    dl_link:
+      "https://dl2.rostam.top/film/1986/A%20Better%20Tomorrow/A%20Better%20Tomorrow.%5BBluRay%5D%5B720%5D%5BAioFilm.com%5D.mp4",
+  },
 ];
+const allFilms = [...newFilmsArray, ...seriesData];
+
+const urlParams = new URLSearchParams(window.location.search);
+const navLinkId = urlParams.get("id");
 
 // nav links
 navAtags.forEach((tag) => {
@@ -591,108 +736,28 @@ footerLinks.forEach((tag) => {
   });
 });
 
-// film API
-function getFilmsFromAPI(genreID, whereTo, slider) {
-  const newFilms = [];
-  const url = `https://moviesapi.ir/api/v1/genres/${genreID}/movies?page=1`;
-  const options = {
-    method: "GET",
-  };
-
-  (async () => {
-    try {
-      const response = await fetch(url, options);
-      const result = await response.text();
-      newFilms.push(JSON.parse(result));
-      newFilms.map((film) => {
-        film.data.map((film) => {
-          const { poster, title, imdb_rating, id, year } = film;
-          return (whereTo.innerHTML += `
-              <div class="film-card">
-                <img src="${poster}" alt="" />
-                <div class="film-details">
-                  <div class="film-title">${title + " " + year}</div>
-                  <div class="film-rating">
-                    <span>${imdb_rating}</span>
-                    <img src="assets/imdb.png" alt="" />
-                  </div>
-                  <a href="#" id="${id}">دانلود فیلم</a>
-                </div>
-              </div>
-        `);
-        });
-      });
-
-      if (slider) {
-        sliderFunction(whereTo);
-      }
-
-      const downloadButtons = document.querySelectorAll(".film-details a");
-      downloadButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          window.location.href = `details.html?id=${btn.id}`;
-        });
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  })();
-}
-const urlParams = new URLSearchParams(window.location.search);
-const filmId = urlParams.get("id");
-
-function addNewFilms() {
-  newFilmsArray.map((film) => {
-    const { img, title, rating, id } = film;
-    return (searchContainer.innerHTML += `
+function addNewFilms(array, where) {
+  array.map((film) => {
+    const { img, title, rating, id, year } = film;
+    let isSeries = film.id > 5000;
+    return (where.innerHTML += `
     <div class="film-card">
-            <img src="${img}" alt="" />
-            <div class="film-details">
-              <div class="film-title">${title}</div>
-              <div class="film-rating">
-                <span>${rating}</span>
-                <img src="assets/imdb.png" alt="" />
-              </div>
-              <a href="#" id="${id}">دانلود فیلم</a>
+          <img src=${isSeries ? `assets/series/${img}` : `${img}`} alt="" />
+          <div class="film-details">
+            <div class="film-title">${title} ${!isSeries ? year : ""}</div>
+            <div class="film-rating">
+              <span>${rating}</span>
+              <img src="assets/imdb.png" alt="" />
             </div>
-            </div>
-    `);
+            <a href="#" id="${id}">دانلود فیلم</a>
+          </div>
+          </div>
+  `);
   });
 }
 function addNewFilmsBasedOnGenre(genreNumber) {
-  let genre;
-  switch (genreNumber) {
-    case "3":
-      genre = "action";
-      break;
-    case "7":
-      genre = "fantasy";
-      break;
-    case "9":
-      genre = "comedy";
-      break;
-    case "17":
-      genre = "horror";
-      break;
-  }
-
-  let thisFilm = newFilmsArray.filter((film) => film.genre == genre);
-
-  thisFilm.forEach((film) => {
-    const { img, title, rating, id } = film;
-    searchContainer.innerHTML += `
-    <div class="film-card">
-            <img src="${img}" alt="" />
-            <div class="film-details">
-              <div class="film-title">${title}</div>
-              <div class="film-rating">
-                <span>${rating}</span>
-                <img src="assets/imdb.png" alt="" />
-              </div>
-              <a href="#" id="${id}">دانلود فیلم</a>
-            </div>
-            </div> `;
-  });
+  let thisFilm = newFilmsArray.filter((film) => film.genre == genreNumber);
+  addNewFilms(thisFilm, searchContainer);
 }
 // ==================== SLIDER ========================
 function sliderFunction(whereto) {
@@ -803,84 +868,12 @@ navLinks.forEach((link) => {
     }
   });
 });
-// get all films from API without the slider
-function getAllFilms(whereto) {
-  getFilmsFromAPI(3, whereto);
-  getFilmsFromAPI(7, whereto);
-  getFilmsFromAPI(9, whereto);
-  getFilmsFromAPI(17, whereto);
-}
 // ==================== FILTER YEAR ============================
-function extractYear(year, genreID) {
-  const newFilms = [];
-  const filmsData = [];
-  const url = `https://moviesapi.ir/api/v1/genres/${genreID}/movies?page=1`;
-  const options = {
-    method: "GET",
-  };
-
-  (async () => {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    newFilms.push(JSON.parse(result));
-    newFilms.map((film) => {
-      film.data.map((film) => {
-        filmsData.push({
-          title: film.title,
-          img: film.poster,
-          rating: film.imdb_rating,
-          id: film.id,
-          year: film.year,
-        });
-      });
-    });
-    let yearBefore1990 = filmsData.filter((film) => film.year < 1990);
-    let year1990till2010 = filmsData.filter(
-      (film) => film.year >= 1990 && film.year <= 2010
-    );
-    let year2011till2020 = filmsData.filter(
-      (film) => film.year >= 2011 && film.year <= 2020
-    );
-
-    let array;
-    switch (year) {
-      case 1990:
-        array = yearBefore1990;
-        break;
-      case 2000:
-        array = year1990till2010;
-        break;
-      case 2011:
-        array = year2011till2020;
-        break;
-    }
-
-    array.map((film) => {
-      const { img, title, rating, id, year } = film;
-      searchContainer.innerHTML += `
-<div class="film-card">
-      <img src="${img}" alt="" />
-      <div class="film-details">
-        <div class="film-title">${title + " " + year}</div>
-        <div class="film-rating">
-          <span>${rating}</span>
-          <img src="assets/imdb.png" alt="" />
-        </div>
-        <a href="#" id="${id}">دانلود فیلم</a>
-      </div>
-      </div>
-`;
-
-      const downloadButtons = document.querySelectorAll(".film-details a");
-      downloadButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          window.location.href = `details.html?id=${btn.id}`;
-        });
-      });
-    });
-  })();
-}
-function extractYearNewFilms(year) {
+function extractFilmYear(year) {
+  let yearBefore1990 = newFilmsArray.filter((film) => film.year < 1990);
+  let year1990till2010 = newFilmsArray.filter(
+    (film) => film.year >= 1990 && film.year <= 2010
+  );
   let year2011till2020 = newFilmsArray.filter(
     (film) => film.year >= 2011 && film.year <= 2020
   );
@@ -890,6 +883,12 @@ function extractYearNewFilms(year) {
 
   let array;
   switch (year) {
+    case 1990:
+      array = yearBefore1990;
+      break;
+    case 2000:
+      array = year1990till2010;
+      break;
     case 2011:
       array = year2011till2020;
       break;
@@ -904,32 +903,16 @@ function extractYearNewFilms(year) {
       break;
   }
 
-  array.map((film) => {
-    const { img, title, rating, id, year } = film;
-    searchContainer.innerHTML += `
-<div class="film-card">
-    <img src="${img}" alt="" />
-    <div class="film-details">
-      <div class="film-title">${title + " " + year}</div>
-      <div class="film-rating">
-        <span>${rating}</span>
-        <img src="assets/imdb.png" alt="" />
-      </div>
-      <a href="#" id="${id}">دانلود فیلم</a>
-    </div>
-    </div>
-`;
-    const downloadButtons = document.querySelectorAll(".film-details a");
-    downloadButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        window.location.href = `details.html?id=${btn.id}`;
-      });
+  addNewFilms(array, searchContainer);
+
+  const downloadButtons = document.querySelectorAll(".film-details a");
+  downloadButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      window.location.href = `details.html?id=${btn.id}`;
     });
   });
 }
 // ===================== SEARCH ALL FILMS ============================
-const allFilms = [...newFilmsArray, ...seriesData];
-
 navSearchSection.addEventListener("submit", (e) => {
   e.preventDefault();
   let value = searchInput.value.toLowerCase();

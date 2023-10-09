@@ -113,7 +113,6 @@ nav {
 }
 .mobile-menu-item .sub-mobile-menu-items {
   height: 0;
-  transition: all 0.3s;
 }
 .mobile-menu-item.active .sub-mobile-menu-items {
   height: 100%;
@@ -513,6 +512,7 @@ nav {
 @media screen and (max-width: 500px) {
   #hero {
     height: 60vh;
+    background-position: 60% 0;
   }
   #hero-video {
     transform: scale(2.5);
@@ -524,18 +524,16 @@ nav {
   #header h1 {
     text-align: center;
   }
+  #header .fa-play {
+    display: none;
+  }
   #navigation {
     margin-top: -20px;
-  }
-  .mobile-menu-list {
-  position: absolute;
-    top: 0;
   }
   .film-slider .film-card {
     height: 250px;
     min-width: 49%;
   }
-
   #main .film-card .film-details .film-title {
     font-size: 1rem;
     margin: 0 2px;

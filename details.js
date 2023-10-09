@@ -189,18 +189,30 @@ function randomRecommendedFilms() {
 }
 randomRecommendedFilms();
 // ======================== ADD COMMENT ============================
-const commentCountElement = document.getElementById("comment-number");
 let commentCount = 1;
+
+const commentCountElement = document.getElementById("comment-number");
 commentForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let userName = userNameElement.value;
   let commentText = commentTextElement.value;
   let picture = userName.slice(0, 1);
+
+  // comment date
   let iranianDate = new persianDate();
   let currentDate = iranianDate.toLocale("fa").format();
+  // comment count
   commentCountElement.innerHTML = `${++commentCount} نظر`;
+  // generate unique id for each comment
+  let commentId = "f";
+  let digits = "abcdefghijklmnopqrstuvwxyz0123456789";
+  for (let i = 0; i < 8; i++) {
+    let randomIndex = Math.floor(Math.random() * digits.length);
+    commentId += digits[randomIndex];
+  }
+  // add comment to DOM
   publishedComments.innerHTML += `
-  <div class="user-comment">
+  <div class="user-comment" id=${commentId}>
     <div class="user-info">
       <span>${picture}</span>
       <div class="user-name">${userName}</div>
@@ -212,65 +224,84 @@ commentForm.addEventListener("submit", (e) => {
       <div class="comment-likes">
         <div class="like">
           <span>0</span>
-          <i class="fa fa-thumbs-up"></i>
+          <i onclick="likeCount(${commentId})" class="fa fa-thumbs-up"></i>
         </div>
         <div class="dislike">
           <span>0</span>
-          <i class="fa fa-thumbs-down"></i>
+          <i onclick="dislikeCount(${commentId})" class="fa fa-thumbs-down"></i>
         </div>
       </div>
     </div>
   </div>
     `;
 
-  likeCount();
-  dislikeCount();
+  const userPic = document.querySelector(`#${commentId} .user-info span`);
+  function getRandomColor() {
+    const hue = Math.floor(Math.random() * 360);
+    const lightness = Math.floor(Math.random() * 41) + 30;
+
+    const color = `hsl(${hue},100%,${lightness}%)`;
+    return color;
+  }
+  userPic.style.backgroundColor = getRandomColor();
 
   userNameElement.value = "";
   userEmailElement.value = "";
   commentTextElement.value = "";
+
+  likedStates[commentId] = false;
+  dislikedStates[commentId] = false;
 });
 
 // ======================== COMMENT LIKE ============================
-let likeStatus = false;
-let dislikeStatus = false;
-function likeCount() {
-  const likeButtons = document.querySelectorAll(".like");
-  likeButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      likeStatus = likeStatus === false ? true : false;
-      const span = button.querySelector("span");
-      const icon = button.querySelector("i");
-      if (likeStatus) {
-        span.innerHTML++;
-        icon.style.color = "green";
-      } else {
-        span.innerHTML--;
-        icon.style.color = "white";
-      }
-    });
-  });
-}
-likeCount();
+const likedStates = { asdflkjh: false };
+const dislikedStates = { asdflkjh: false };
+let disliked = false;
+function likeCount(id) {
+  const likeIcon = id.querySelector(".fa-thumbs-up");
+  let selectedComment = id;
+  let thisState = likedStates[selectedComment.id];
+  likedStates[selectedComment.id] =
+    likedStates[selectedComment.id] === false
+      ? (likedStates[selectedComment.id] = true)
+      : (likedStates[selectedComment.id] = false);
+  const likeElement = document.querySelector(
+    `#${selectedComment.id} .like span`
+  );
 
-function dislikeCount() {
-  const dislikeButtons = document.querySelectorAll(".dislike");
-  dislikeButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      dislikeStatus = dislikeStatus === false ? true : false;
-      const span = button.querySelector("span");
-      const icon = button.querySelector("i");
-      if (dislikeStatus) {
-        span.innerHTML++;
-        icon.style.color = "red";
-      } else {
-        span.innerHTML--;
-        icon.style.color = "white";
-      }
-    });
-  });
+  if (thisState) {
+    thisState = false;
+    likeElement.innerHTML--;
+    likeIcon.style.color = "white";
+  } else {
+    thisState = true;
+    likeElement.innerHTML++;
+    likeIcon.style.color = "green";
+  }
 }
-dislikeCount();
+
+function dislikeCount(id) {
+  const dislikeIcon = id.querySelector(".fa-thumbs-down");
+  let selectedComment = id;
+  let thisState = dislikedStates[selectedComment.id];
+  dislikedStates[selectedComment.id] =
+    dislikedStates[selectedComment.id] === false
+      ? (dislikedStates[selectedComment.id] = true)
+      : (dislikedStates[selectedComment.id] = false);
+  const dislikeElement = document.querySelector(
+    `#${selectedComment.id} .dislike span`
+  );
+
+  if (thisState) {
+    thisState = false;
+    dislikeElement.innerHTML--;
+    dislikeIcon.style.color = "white";
+  } else {
+    thisState = true;
+    dislikeElement.innerHTML++;
+    dislikeIcon.style.color = "red";
+  }
+}
 
 // ======================== FILM LIKE ============================
 function filmLike() {

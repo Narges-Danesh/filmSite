@@ -303,6 +303,10 @@
 .comment-likes .dislike i:hover {
   color: red;
 }
+.published-comments {
+  display: flex;
+  flex-flow: column-reverse;
+}
 /* ===================== MEDIA QUERIES ======================== */
 
 @media screen and (max-width: 1000px) {
@@ -327,7 +331,7 @@
     align-items: center;
   }
   #bg-blur {
-    height: 1100px;
+    height: 900px;
   }
   .film-desc .poster {
     max-width: 300px;
@@ -368,5 +372,17 @@
   .dl-box {
     flex-flow: column;
     gap: 15px;
+  }
+  #recommended-container {
+    padding: 5px;
+  }
+  #recommended-container .film-card {
+    height: 250px;
+    width: 45%;
+    margin: 5px;
+  }
+  #recommended-container .film-card a {
+    padding: 7px 10px;
+    font-size: 14px;
   }
 }

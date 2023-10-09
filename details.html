@@ -184,12 +184,13 @@
                   name="comment"
                   id="comment-text"
                   placeholder="نظر خود را برای ما بنویسید..."
+                  required
                 ></textarea>
                 <input type="submit" value="ارسال &#8592; " id="comment-send" />
               </form>
 
               <div class="published-comments">
-                <div class="user-comment">
+                <div class="user-comment" id="asdflkjh">
                   <div class="user-info">
                     <span>A</span>
                     <div class="user-name">Amin</div>
@@ -201,11 +202,17 @@
                     <div class="comment-likes">
                       <div class="like">
                         <span>3</span>
-                        <i class="fa fa-thumbs-up"></i>
+                        <i
+                          onclick="likeCount(asdflkjh)"
+                          class="fa fa-thumbs-up"
+                        ></i>
                       </div>
                       <div class="dislike">
                         <span>1</span>
-                        <i class="fa fa-thumbs-down"></i>
+                        <i
+                          onclick="dislikeCount(asdflkjh)"
+                          class="fa fa-thumbs-down"
+                        ></i>
                       </div>
                     </div>
                   </div>

@@ -331,7 +331,7 @@
     align-items: center;
   }
   #bg-blur {
-    height: 900px;
+    height: 1000px;
   }
   .film-desc .poster {
     max-width: 300px;
@@ -341,7 +341,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
   }
   .film-desc .details .buttons {

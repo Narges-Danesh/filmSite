@@ -100,7 +100,7 @@ function showFilmDetails(filmId) {
 
     detailsContainer.innerHTML += `
         <img
-          src="assets/series/${img}"
+          src="assets/cover/${img}"
           alt=""
           class="poster"
         />

@@ -31,7 +31,7 @@ newFilmsArray.map((film) => {
   const { img, title, rating, id, year } = film;
   newFilmsContainer.innerHTML += `
     <div class="film-card">
-            <img src="${img}" alt="" />
+            <img src="assets/cover/${img}" alt="" />
             <div class="film-details">
               <div class="film-title">${title} ${year}</div>
               <div class="film-rating">

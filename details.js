@@ -46,7 +46,7 @@ function showFilmDetails(filmId) {
 
     detailsContainer.innerHTML += `
         <img
-          src="${img}"
+          src="assets/cover/${img}"
           alt=""
           class="poster"
         />

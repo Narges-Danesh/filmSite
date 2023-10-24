@@ -3,7 +3,7 @@
 }
 #bg-blur {
   filter: blur(20px) grayscale(100%) brightness(0.5);
-  height: 600px;
+  height: 90vh;
   background-image: url(assets/series/His-Dark-Materials.jpg);
   background-size: 150%;
   background-position: 50% 50%;

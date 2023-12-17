@@ -167,7 +167,7 @@ function randomRecommendedFilms() {
     const { img, title, year, id, rating } = newFilmsArray[randomNumber];
     recommendedContainer.innerHTML += `
     <div class="film-card">
-  <img src="${img}" alt="" />
+  <img src="assets/cover/${img}" alt="" />
   <div class="film-details">
     <div class="film-title">${title} ${year}</div>
     <div class="film-rating">
